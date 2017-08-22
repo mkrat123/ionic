@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-
+import { EmailComposer } from '@ionic-native/email-composer';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HttpModule } from '@angular/http';
 import { ApiProvider } from '../providers/api/api';
@@ -25,7 +25,7 @@ import { ApiProvider } from '../providers/api/api';
   ],
   providers: [
     StatusBar,
-    SplashScreen,ApiProvider,
+    SplashScreen,ApiProvider,EmailComposer,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider
   ]
